@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutHero from '../components/AboutHero';
-import comp3About from '../components/comp3About';
+import Comp3About from '../components/comp3About';
 import Aboutfs from '../components/Aboutfs';
 
 function About() {
@@ -19,7 +19,7 @@ function About() {
           </div>
         </div>
       </div>
-      <comp3About/>
+      <Comp3About/>
       <Aboutfs/>
     </>
   );
