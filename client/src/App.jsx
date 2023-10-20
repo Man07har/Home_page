@@ -13,7 +13,7 @@ import MyCarousel from './components/MyCarousel';
 import Categories from './pages/Categories';
 import FAQ from './pages/FAQ';
 import About from './pages/About';
-
+import Default from './pages/Default';
 // DOCS
 //  <Container /> will be used afterward and as a template when using redux
 
@@ -77,6 +77,7 @@ export default function App() {
                   <Route path="/categories" element={<Categories />} />
                   <Route path="/faq" element={<FAQ />} />
                   <Route path="/About" element={<About />} />
+                  <Route path="*" element={<Default />} />
                 </Routes>
               </Router>
               <Footer />
