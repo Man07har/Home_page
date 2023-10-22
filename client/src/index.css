@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,4 +18,18 @@
 }
 .kavoonfont{
     font-family: 'Kavoon', serif;
+}
+.kanitfont{
+    font-family: 'Kanit', sans-serif;
+}
+.irishfont{
+    font-family: 'Irish Grover', cursive;
+
+}
+
+body{
+    background-image: url("./assets/AllPageBG.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+    
 }

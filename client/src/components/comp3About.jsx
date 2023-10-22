@@ -1,14 +1,18 @@
 import React from 'react';
-import { ChakraProvider, Box, CSSReset, theme, Flex, Text } from '@chakra-ui/react';
+import { ChakraProvider, Box, CSSReset, theme, Flex, Text, Center } from '@chakra-ui/react';
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={ theme }>
       <CSSReset />
-      <Flex width="100%">
-        <YourComponent title="Our Vision" content="Empowering customers with a curated collection of artifacts, blending culture and craftsmanship to enrich lifestyles." />
-        <YourComponent title="Our Goals" content="Enrich lives by offering exceptional artifacts, celebrating global heritage and creativity." />
-      </Flex>
+      <Center>
+        <div className='mx-auto'>
+          <Flex width="100%" >
+            <YourComponent title="Our Vision" content="Empowering customers with a curated collection of artifacts, blending culture and craftsmanship to enrich lifestyles." />
+            <YourComponent title="Our Goals" content="Enrich lives by offering exceptional artifacts, celebrating global heritage and creativity." />
+          </Flex>
+        </div>
+      </Center>
     </ChakraProvider>
   );
 }
@@ -31,9 +35,9 @@ function YourComponent({ title, content }) {
           color="#000"
           fontSize="40px"
           fontWeight="bold"
-          fontFamily="Roboto"
+        // fontFamily="Roboto"
         >
-          {title}
+          { title }
         </Text>
       </Box>
       <Box marginY="10px">
@@ -44,9 +48,9 @@ function YourComponent({ title, content }) {
           display="flex"
           alignItems="center"
           justifyContent="center"
-          style={{
+          style={ {
             boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.25)',
-          }}
+          } }
         >
           <Box
             width="80%"
@@ -66,7 +70,7 @@ function YourComponent({ title, content }) {
               fontFamily="Kanit"
               fontWeight="normal"
             >
-              {content}
+              { content }
             </Text>
           </Box>
         </Box>

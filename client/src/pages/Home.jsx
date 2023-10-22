@@ -3,6 +3,7 @@ import Ganpati from "../assets/ganapati.png";
 import Card from "../components/Card";
 import MyCarousel from "../components/MyCarousel";
 import Components from "../components/Components";
+
 function Home() {
   return (
     <>
