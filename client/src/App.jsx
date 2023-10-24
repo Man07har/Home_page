@@ -15,6 +15,7 @@ import FAQ from './pages/FAQ';
 import About from './pages/About';
 import Default from './pages/Default';
 import SignUp from './pages/SignUp';
+import Login from './pages/Login';
 // DOCS
 //  <Container /> will be used afterward and as a template when using redux
 
@@ -50,12 +51,12 @@ const MapDispatchToProps = (dispatch) => {
 const Component = ({ count, increment, decrement }) => {
   return (
     <>
-      <h1>Count = { count }</h1>
-      <button className="bg-blue-400" onClick={ increment }>
+      <h1>Count = {count}</h1>
+      <button className="bg-blue-400" onClick={increment}>
         Increment
       </button>
       <br />
-      <button className="bg-blue-200" onClick={ decrement }>
+      <button className="bg-blue-200" onClick={decrement}>
         Decrement
       </button>
     </>
@@ -68,7 +69,7 @@ const theme = extendTheme({
   styles: {
     global: () => ({
       body: {
-        background: "",
+        background: '',
       },
     }),
   },
@@ -77,20 +78,20 @@ const theme = extendTheme({
 export default function App() {
   return (
     <>
-      <ChakraProvider theme={ theme }>
-        <Provider store={ store }>
+      <ChakraProvider theme={theme}>
+        <Provider store={store}>
           <div>
-            <Stack spacing={ 4 }>
+            <Stack spacing={4}>
               <Navbar />
               <Router>
                 <Routes>
-                  <Route path="/" element={ <Home /> } />
-                  <Route path="/categories" element={ <Categories /> } />
-                  <Route path="/faq" element={ <FAQ /> } />
-                  <Route path="/About" element={ <About /> } />
-                  <Route path="/sign-up" element={ <SignUp /> } />
-                  <Route path="*" element={ <Default /> } />
-
+                  <Route path="/" element={<Home />} />
+                  <Route path="/categories" element={<Categories />} />
+                  <Route path="/faq" element={<FAQ />} />
+                  <Route path="/About" element={<About />} />
+                  <Route path="/sign-up" element={<SignUp />} />
+                  <Route path="/log-in" element={<Login />} />
+                  <Route path="*" element={<Default />} />
                 </Routes>
               </Router>
               <Footer />
