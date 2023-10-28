@@ -16,6 +16,7 @@ import About from './pages/About';
 import Default from './pages/Default';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
+import Stats from './components/Stats';
 // DOCS
 //  <Container /> will be used afterward and as a template when using redux
 
@@ -83,7 +84,7 @@ export default function App() {
           <div>
             <Stack spacing={4}>
               <Navbar />
-              <Router>
+              {/* <Router>
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/categories" element={<Categories />} />
@@ -93,7 +94,8 @@ export default function App() {
                   <Route path="/log-in" element={<Login />} />
                   <Route path="*" element={<Default />} />
                 </Routes>
-              </Router>
+              </Router> */}
+              <Stats />
               <Footer />
             </Stack>
           </div>
