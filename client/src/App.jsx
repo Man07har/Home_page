@@ -84,7 +84,7 @@ export default function App() {
           <div>
             <Stack spacing={4}>
               <Navbar />
-              {/* <Router>
+              <Router>
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/categories" element={<Categories />} />
@@ -94,7 +94,7 @@ export default function App() {
                   <Route path="/log-in" element={<Login />} />
                   <Route path="*" element={<Default />} />
                 </Routes>
-              </Router> */}
+              </Router>
               <Stats />
               <Footer />
             </Stack>
