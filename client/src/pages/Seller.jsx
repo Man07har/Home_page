@@ -1,6 +1,7 @@
 import React from 'react'
 import SellerHero from '../components/SellerHero'
 import { Box } from '@chakra-ui/react'
+import Stats from '../components/Stats';
 const Seller = () => {
     return (
         <>
@@ -8,7 +9,8 @@ const Seller = () => {
                 backgroundColor: "white",
             } } className='w-full h-full '>
                 <SellerHero />
-                <Box h={ "20vh" } />
+                <Stats />
+
             </div>
         </>
     )
