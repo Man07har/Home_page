@@ -1,6 +1,7 @@
 import React from 'react';
 import SellerHero from '../components/SellerHero';
 import { Box } from '@chakra-ui/react';
+import SellerLoveSelling from '../components/SellerLoveSelling'
 import Stats from '../components/Stats';
 // import ProcedureParent from '../components/ProcedureParent';
 import Procedure from '../components/Procedure';
@@ -20,6 +21,7 @@ const Seller = () => {
       >
         <SellerHero />
         <Stats />
+          <SellerLoveSelling />
         <div className="my-8 p-8">
           <h1 className="text-[3em] font-medium">Quick & Easy to follow</h1>
           <h2 className="text-[2em] font-medium">
