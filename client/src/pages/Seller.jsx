@@ -1,5 +1,6 @@
 import React from 'react'
 import SellerHero from '../components/SellerHero'
+import SellerLoveSelling from '../components/SellerLoveSelling'
 import { Box } from '@chakra-ui/react'
 import Stats from '../components/Stats';
 const Seller = () => {
@@ -10,7 +11,7 @@ const Seller = () => {
             } } className='w-full h-full '>
                 <SellerHero />
                 <Stats />
-
+                <SellerLoveSelling />
             </div>
         </>
     )
