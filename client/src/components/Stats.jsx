@@ -38,7 +38,6 @@ function Stats() {
               Seller Community
             </h2>
           </div>
-          <div className="w-[0.1em] m-2 bg-black"></div>
         </div>
       </div>
     </>
