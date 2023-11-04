@@ -1,7 +1,7 @@
 import React from 'react';
 import SellerHero from '../components/SellerHero';
 import { Box } from '@chakra-ui/react';
-import SellerLoveSelling from '../components/SellerLoveSelling'
+import SellerLoveSelling from '../components/SellerLoveSelling';
 import Stats from '../components/Stats';
 // import ProcedureParent from '../components/ProcedureParent';
 import Procedure from '../components/Procedure';
@@ -10,6 +10,7 @@ import MacShop from '../assets/macShop.png';
 import ProcessShop from '../assets/processShop.png';
 import ShipShop from '../assets/shipShop.png';
 import TaskShop from '../assets/taskShop.png';
+import Tools from '../components/Tools';
 const Seller = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const Seller = () => {
       >
         <SellerHero />
         <Stats />
-          <SellerLoveSelling />
+        <SellerLoveSelling />
         <div className="my-8 p-8">
           <h1 className="text-[3em] font-medium">Quick & Easy to follow</h1>
           <h2 className="text-[2em] font-medium">
@@ -61,6 +62,7 @@ Create account and complete the verification process in just 10 mins"
             />
           </div>
         </div>
+        <Tools />
       </div>
     </>
   );
