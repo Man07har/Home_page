@@ -11,6 +11,7 @@ import MacShop from '../assets/macShop.png';
 import ProcessShop from '../assets/processShop.png';
 import ShipShop from '../assets/shipShop.png';
 import TaskShop from '../assets/taskShop.png';
+import Tools from '../components/Tools';
 const Seller = () => {
   return (
     <>
@@ -63,6 +64,7 @@ Create account and complete the verification process in just 10 mins"
           </div>
         </div>
         <SuccessStories />
+        <Tools />
       </div>
     </>
   );
