@@ -10,7 +10,7 @@ const GetToKnowThePlatform = () => {
             <div className="header">
                 <div className="font-bold text-5xl mx-28 my-5 mb-7 ">
                     <h1>
-                        Most sold <span className="text-[#D46E2F]">Arts</span>
+                        Get to know <span className="text-[#D46E2F]">the Platform</span>
                     </h1>
                     <div className="bg-[#E6BEA0] mt-3 h-1">
                         <div className="bg-[#D0732F] h-1 w-[35%]"></div>
