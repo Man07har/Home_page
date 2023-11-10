@@ -16,6 +16,7 @@ import About from './pages/About';
 import Default from './pages/Default';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
+import SellerLogin from './pages/SellerLogin';
 import Seller from './pages/Seller';
 import SellerPlatformPage from './pages/SellerPlatformPage';
 // DOCS
@@ -93,6 +94,7 @@ export default function App() {
                   <Route path="/About" element={<About />} />
                   <Route path="/sign-up" element={<SignUp />} />
                   <Route path="/log-in" element={<Login />} />
+                  <Route path="/seller-log-in" element={<SellerLogin />} />
                   <Route path="/seller" element={<Seller />} />
                   <Route
                     path="/sellerplatform"
