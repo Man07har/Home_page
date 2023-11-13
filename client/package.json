@@ -17,7 +17,6 @@
     "@emotion/styled": "^11.11.0",
     "@iconscout/react-unicons": "^2.0.2",
     "framer-motion": "^10.16.4",
-    "marked": "^10.0.0",
     "nuka-carousel": "^6.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
