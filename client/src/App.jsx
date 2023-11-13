@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Components from './components/Components';
+// import Components from './components/Components';
 import { ReactDOM } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -9,7 +9,7 @@ import { ChakraProvider, Stack, extendTheme } from '@chakra-ui/react';
 
 import { createStore } from 'redux';
 import { Provider, useSelector, useDispatch, connect } from 'react-redux';
-import MyCarousel from './components/MyCarousel';
+// import MyCarousel from './components/MyCarousel';
 import Categories from './pages/Categories';
 import FAQ from './pages/FAQ';
 import About from './pages/About';
@@ -18,6 +18,7 @@ import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import Seller from './pages/Seller';
 import SellerPlatformPage from './pages/SellerPlatformPage';
+import RegistrationForm from './pages/RegistrationForm';
 // DOCS
 //  <Container /> will be used afterward and as a template when using redux
 
@@ -97,6 +98,10 @@ export default function App() {
                   <Route
                     path="/sellerplatform"
                     element={<SellerPlatformPage />}
+                  />
+                  <Route
+                    path="/registrationform"
+                    element={<RegistrationForm />}
                   />
                   <Route path="*" element={<Default />} />
                 </Routes>
