@@ -9,6 +9,7 @@ import {
 import React from 'react';
 import AccountInformation from '../components/AccountInformation';
 import StoreInformation from '../components/StoreInformation';
+import AddressInformation from '../components/AddressInformation';
 const SellerRegistrationForm = () => {
   return (
     // <div>SellerRegistrationForm</div>
@@ -29,6 +30,10 @@ const SellerRegistrationForm = () => {
           </main>
         </Container>
         <StoreInformation />
+        <AddressInformation />
+        {/* <Container maxW={'3xl'}>
+          <AddressInformation />
+        </Container> */}
       </div>
     </>
   );
