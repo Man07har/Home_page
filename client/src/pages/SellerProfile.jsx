@@ -1,10 +1,12 @@
+
 import { Box, Center, Flex, Grid, Image, Link, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { FaTruckFast, FaLocationDot, FaAward } from "react-icons/fa6";
 import SellerProfileHero from '../assets/sellerProfileHero.png'
 import ganpati from '../assets/ganapati.png'
 import sideImg from '../assets/image2.jpg'
-
+import SellerProfileCatogery from '../components/SellerProfileCatogery';
+import SellerProfileFilter from '../components/SellerProfileFilter';
 
 
 const SellerProfile = () => {
@@ -70,14 +72,13 @@ const SellerProfile = () => {
                     </Stack>
 
                 </Flex>
-
+        <SellerProfileFilter />
+        <SellerProfileCatogery />
             </div>
         </div>
-
     </>
-    )
-}
-
+  );
+};
 const Review = () => {
     return (
         <div><Box w={ '100%' } px='2em'>
@@ -119,5 +120,4 @@ const Review = () => {
     )
 }
 
-
-export default SellerProfile
+export default SellerProfile;
