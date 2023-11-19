@@ -4,6 +4,7 @@ import { FaTruckFast, FaLocationDot, FaAward } from 'react-icons/fa6';
 import SellerProfileHero from '../assets/sellerProfileHero.png';
 import SellerProfileCatogery from '../components/SellerProfileCatogery';
 import SellerProfileFilter from '../components/SellerProfileFilter';
+import Announcements from '../components/Announcements';
 const SellerProfile = () => {
   return (
     <>
@@ -72,6 +73,7 @@ const SellerProfile = () => {
             </Grid>
           </Center>
         </Flex>
+        <Announcements />
         <SellerProfileFilter />
         <SellerProfileCatogery />
       </div>
