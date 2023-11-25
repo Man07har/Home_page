@@ -21,6 +21,7 @@ import Seller from './pages/Seller';
 import SellerPlatformPage from './pages/SellerPlatformPage';
 import SellerRegistrationForm from './pages/SellerRegistrationForm';
 import SellerProfile from './pages/SellerProfile';
+import Product from './pages/Product';
 // DOCS
 //  <Container /> will be used afterward and as a template when using redux
 
@@ -102,6 +103,7 @@ export default function App() {
                   <Route path="*" element={ <Default /> } />
                   <Route path="/seller-registration-form" element={ <SellerRegistrationForm /> } />
                   <Route path='/seller-profile' element={ <SellerProfile /> } />
+                  <Route path='/product' element={ <Product /> } />
                 </Routes>
               </Router>
               <Footer />
