@@ -1,22 +1,19 @@
-import React from 'react'
-import AddToCartAndReviews from '../components/AddToCartAndReviews'
-import MyAccordion from '../components/MyAccordion'
-import { Accordion } from "@chakra-ui/react"
+import React from 'react';
+import AddToCartAndReviews from '../components/AddToCartAndReviews';
+
+import ProdutHeroSection from '../components/ProductHeroSection';
+import ProductCatogery from '../components/ProductCatogery';
+
 const Product = () => {
-    return (<>
-        <div className="robotofont">
-            <AddToCartAndReviews />
-
-            <Accordion defaultIndex={ [0] } allowMultiple>
-                <MyAccordion title="Product Description">
-                    <p>Hello</p>
-                </MyAccordion>
-            </Accordion>
-
-        </div >
-
+  return (
+    <>
+      <div className="robotofont">
+        <ProdutHeroSection />
+        <AddToCartAndReviews />
+        <ProductCatogery />
+      </div>
     </>
-    )
-}
+  );
+};
 
-export default Product
+export default Product;
