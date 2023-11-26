@@ -34,6 +34,7 @@ function ProductHeroSection() {
               <MyAccordion title="Size">
                 <p>Hello</p>
               </MyAccordion>
+              {/* to add the accodian according to the figma file design as the page is not working when added*/}
             </Accordion>
             <Accordion defaultIndex={[0]} allowMultiple>
               <MyAccordion title="Quantity">
