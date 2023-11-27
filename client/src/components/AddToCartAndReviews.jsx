@@ -48,26 +48,27 @@ const AddToCartAndReviews = () => {
                             Read More.
                         </p>
                     </div>
-                    <div className="flex justify-evenly items-center my-4">
+                    <div className="flex justify-evenly items-center bg-[#F4F4F4] rounded-lg my-4">
                         <div className="flex items-center justify-center">
-                            <div className=" w-24 h-24 rounded-full"
+                            <div className=" w-20 h-24 rounded-lg m-4"
                                 style={ {
                                     backgroundImage: `url(${ganapati})`,
                                     backgroundRepeat: 'no-repeat',
                                     backgroundSize: 'cover',
-                                    boxShadow: ".5em .5em #F4F4F4 "
+                                    backgroundPosition: 'center',
                                 } }
                             ></div>
                         </div>
-                        <div className="w-1/2 bg-[#F4F4F4] p-3">
-                            <p className='font-bold'>Beautiful colors</p>
-                            <p className='font-semibold'>
-                                Purchased item: <br />
-                                Colorful Wall Art / Flower Artht Wall Art /
-                            </p>
+                        <div className="  p-3 text-xl">
                             <p>
-                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing <br />
-                                Read More.
+                                By: Mohan Lal
+                                <br />
+                                Speciality in Pottery And Handicrafts
+                                <br />
+                                <a href="/seller-profile">
+                                    Check Profile
+
+                                </a>
                             </p>
                         </div>
                     </div>
