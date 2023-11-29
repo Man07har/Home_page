@@ -1,21 +1,49 @@
 import React from 'react';
 import SellerStoryHero from '../components/SellerStoryHero';
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Text } from '@chakra-ui/react'
+import {
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  Text,
+} from '@chakra-ui/react';
+import SellerStroyReadTab from '../components/SellerStoryReadTab';
 function SellerStory() {
   return (
     <>
-      <div className='robotofont'>
+      <div className="robotofont">
         <SellerStoryHero />
-        <Tabs isFitted size={ 'lg' } colorScheme='orange'>
-          <TabList mb='1em' >
-            <Tab> <Text fontSize={ '5xl ' } color={ '#B34806' }>Read</Text> </Tab>
-            <Tab> <Text fontSize={ '5xl ' } color={ '#B34806' }>Watch</Text> </Tab>
-            <Tab> <Text fontSize={ '5xl ' } color={ '#B34806' }>Engage</Text> </Tab>
-            <Tab> <Text fontSize={ '5xl ' } color={ '#B34806' }>Featured</Text> </Tab>
+        <Tabs isFitted size={'lg'} colorScheme="orange">
+          <TabList mb="1em">
+            <Tab>
+              {' '}
+              <Text fontSize={'5xl '} color={'#B34806'}>
+                Read
+              </Text>{' '}
+            </Tab>
+            <Tab>
+              {' '}
+              <Text fontSize={'5xl '} color={'#B34806'}>
+                Watch
+              </Text>{' '}
+            </Tab>
+            <Tab>
+              {' '}
+              <Text fontSize={'5xl '} color={'#B34806'}>
+                Engage
+              </Text>{' '}
+            </Tab>
+            <Tab>
+              {' '}
+              <Text fontSize={'5xl '} color={'#B34806'}>
+                Featured
+              </Text>{' '}
+            </Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
-              <p>Read</p>
+              <SellerStroyReadTab />
             </TabPanel>
             <TabPanel>
               <p>Watch</p>
