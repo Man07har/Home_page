@@ -11,36 +11,37 @@ import {
 import SellerStroyReadTab from '../components/SellerStoryReadTab';
 import SellerStoryWatchTab from '../components/SellerStoryWatchTab';
 import SellerStroyHighlightsTab from '../components/SellerStroyHighlightsTab';
+import SellerStoryFeaturedTab from '../components/SellerStroyFeaturedTab';
 function SellerStory() {
   return (
     <>
       <div className="robotofont">
         <SellerStoryHero />
-        <Tabs isFitted size={'lg'} colorScheme="orange">
+        <Tabs isFitted size={ 'lg' } colorScheme="orange">
           <TabList mb="1em">
             <Tab>
-              {' '}
-              <Text fontSize={'5xl '} color={'#B34806'}>
+              { ' ' }
+              <Text fontSize={ '5xl ' } color={ '#B34806' }>
                 Read
-              </Text>{' '}
+              </Text>{ ' ' }
             </Tab>
             <Tab>
-              {' '}
-              <Text fontSize={'5xl '} color={'#B34806'}>
+              { ' ' }
+              <Text fontSize={ '5xl ' } color={ '#B34806' }>
                 Watch
-              </Text>{' '}
+              </Text>{ ' ' }
             </Tab>
             <Tab>
-              {' '}
-              <Text fontSize={'5xl '} color={'#B34806'}>
-                Engage
-              </Text>{' '}
+              { ' ' }
+              <Text fontSize={ '5xl ' } color={ '#B34806' }>
+                Featured
+              </Text>{ ' ' }
             </Tab>
             <Tab>
-              {' '}
-              <Text fontSize={'5xl '} color={'#B34806'}>
+              { ' ' }
+              <Text fontSize={ '5xl ' } color={ '#B34806' }>
                 Highlights
-              </Text>{' '}
+              </Text>{ ' ' }
             </Tab>
           </TabList>
           <TabPanels>
@@ -51,7 +52,7 @@ function SellerStory() {
               <SellerStoryWatchTab />
             </TabPanel>
             <TabPanel>
-              <p>Engage</p>
+              <SellerStoryFeaturedTab />
             </TabPanel>
             <TabPanel>
               <SellerStroyHighlightsTab />
