@@ -1,0 +1,67 @@
+/* Sidebar.css
+.sidebar {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e1ccbc;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  width: 250px; /* Adjust the width as needed 
+}
+
+.toggle-btn {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+
+.content {
+  padding: 16px;
+  color: #fff;
+} */
+
+/* Sidebar.css */
+.sidebar {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #c95b32;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.sidebar.open {
+  width: 250px; /* Adjust the width as needed */
+}
+
+.toggle-img {
+  position: fixed;
+  left: 20px;
+  /* top: 20px; */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  cursor: pointer;
+  z-index: 2;
+}
+
+.content {
+  padding: 16px;
+  color: #fff;
+}
