@@ -2,6 +2,100 @@ import React from 'react'
 import ganapati from '../assets/ganapati.png'
 import { TfiGift } from "react-icons/tfi";
 import { FaChevronDown } from "react-icons/fa";
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    Button,
+    FormControl,
+    FormLabel,
+    Input,
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItemOption,
+    MenuOptionGroup,
+    MenuDivider,
+    Switch
+} from '@chakra-ui/react'
+import { useDisclosure } from '@chakra-ui/react';
+
+const MadeForYou = () => {
+
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
+    return (
+        <>
+            <div className="flex p-4 bg-[#FFF1E6] justify-evenly items-center text-xl font-bold" >
+                <div className="icon text-4xl text-[#D27C2C]">
+                    <TfiGift />
+                </div>
+                <div className="flex flex-col items-center ">
+                    <p>Made for you</p>
+                    <p className='font-normal text-md'>(Customise your product)</p>
+                </div>
+                <div className="icon">
+                    <Button onClick={ onOpen } bg={ 'none' } _hover={ {
+                        bg: 'none'
+                    } } >
+                        <FaChevronDown />
+                    </Button>
+                    <Modal
+                        isOpen={ isOpen }
+                        onClose={ onClose }
+                    >
+                        <ModalOverlay />
+                        <ModalContent>
+                            <ModalHeader>Create your account</ModalHeader>
+                            <ModalCloseButton />
+                            <ModalBody pb={ 6 }>
+                                <FormControl>
+                                    <FormLabel>Select Material for the product</FormLabel>
+                                    <Menu closeOnSelect={ false }>
+                                        <MenuButton as={ Button } colorScheme='orange'>
+                                            Select
+                                        </MenuButton>
+                                        <MenuList minWidth='240px'>
+                                            <MenuOptionGroup title='Organic' type='checkbox'>
+                                                <MenuItemOption value='soil'>Soil</MenuItemOption>
+                                                <MenuItemOption value='soil2'>Soil</MenuItemOption>
+                                                <MenuItemOption value='soil4'>Soil</MenuItemOption>
+                                                <MenuItemOption value='soil3'>Soil</MenuItemOption>
+                                            </MenuOptionGroup>
+                                            <MenuDivider />
+                                            <MenuOptionGroup title='Non-Organic' type='checkbox'>
+                                                <MenuItemOption value='soil5'>Soil</MenuItemOption>
+                                                <MenuItemOption value='soil6'>Soil</MenuItemOption>
+                                                <MenuItemOption value='soil8'>Soil</MenuItemOption>
+                                                <MenuItemOption value='soil7'>Soil</MenuItemOption>
+                                            </MenuOptionGroup>
+                                        </MenuList>
+                                    </Menu>
+                                </FormControl>
+
+                                <FormControl mt={ 4 }>
+                                    <FormLabel htmlFor='gifts'>Giftable</FormLabel>
+                                    <Switch id='gifts' size='lg' colorScheme='orange' />
+                                </FormControl>
+                            </ModalBody>
+
+                            <ModalFooter>
+                                <Button colorScheme='orange' mr={ 3 }>
+                                    Save
+                                </Button>
+                                <Button onClick={ onClose }>Cancel</Button>
+                            </ModalFooter>
+                        </ModalContent>
+                    </Modal>
+                </div>
+            </div>
+        </>
+    )
+}
 
 
 const ProductReview = () => {
@@ -65,25 +159,15 @@ const AddToCartAndReviews = () => {
                                 <br />
                                 Speciality in Pottery And Handicrafts
                                 <br />
-                                <a href="/seller-profile">
+                                <a href="/seller-profile" className='text-[#D27C2C]'>
                                     Check Profile
 
                                 </a>
                             </p>
                         </div>
                     </div>
-                    <div className="flex p-4 bg-[#FFF1E6] justify-evenly items-center text-xl font-bold" >
-                        <div className="icon text-4xl text-[#D27C2C]">
-                            <TfiGift />
-                        </div>
-                        <div className="flex flex-col items-center ">
-                            <p>Made for you</p>
-                            <p className='font-normal text-md'>(Customise your product)</p>
-                        </div>
-                        <div className="icon">
-                            <FaChevronDown />
-                        </div>
-                    </div>
+                    <MadeForYou />
+
                 </div>
             </div>
         </>
