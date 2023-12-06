@@ -32,8 +32,8 @@ const SellerRegistrationForm = () => {
         <StoreInformation />
         <AddressInformation />
         {/* <Container maxW={'3xl'}>
-          <AddressInformation />
-        </Container> */}
+            <AddressInformation />
+          </Container> */}
       </div>
     </>
   );

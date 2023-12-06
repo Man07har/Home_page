@@ -16,22 +16,22 @@ const SellerLogin = () => {
     <>
       <div className="irishfont">
         <Flex color="white" h="100vh">
-          <Box bg="#E7E1D8" w="100%" p={ 4 } color="white">
+          <Box bg="#E7E1D8" w="100%" p={4} color="white">
             <Center h="100%">
               <Flex
-                direction={ 'column' }
-                h={ '100%' }
-                justifyContent={ 'space-evenly' }
+                direction={'column'}
+                h={'100%'}
+                justifyContent={'space-evenly'}
               >
                 <Text
                   fontSize="6xl"
-                  textAlign={ 'center' }
+                  textAlign={'center'}
                   color="#472905"
-                  textTransform={ 'uppercase' }
+                  textTransform={'uppercase'}
                 >
                   Login
                 </Text>
-                <Stack spacing={ 3 } className="latofont">
+                <Stack spacing={3} className="latofont">
                   <input
                     type="text"
                     className="text-lg font-bold   text-black p-3 rounded-md w-[32rem]
@@ -66,7 +66,7 @@ const SellerLogin = () => {
                   </Button>
                   <Text
                     fontSize="xl"
-                    textAlign={ 'center' }
+                    textAlign={'center'}
                     fontWeight="bold"
                     color="#472905"
                   >
@@ -74,54 +74,54 @@ const SellerLogin = () => {
                   </Text>
                   <Text
                     fontSize="xl"
-                    textAlign={ 'center' }
+                    textAlign={'center'}
                     fontWeight="bold"
                     color="#472905"
                   >
-                    New user? <Text
+                    New user?{' '}
+                    <Text
                       fontSize="xl"
-                      textAlign={ 'center' }
+                      textAlign={'center'}
                       fontWeight="bold"
                       color="#224B99"
-                      display={ 'inline' }
+                      display={'inline'}
                     >
                       signup
                     </Text>
                   </Text>
-
                 </Stack>
               </Flex>
             </Center>
           </Box>
-          <Box w="100%" p={ 4 } bgGradient="linear(to-b, #E2B8A8, #CE7F62)">
-            <Center h={ '100%' }>
+          <Box w="100%" p={4} bgGradient="linear(to-b, #E2B8A8, #CE7F62)">
+            <Center h={'100%'}>
               <Flex
-                direction={ 'column' }
-                h={ '100%' }
-                justifyContent={ 'space-evenly' }
+                direction={'column'}
+                h={'100%'}
+                justifyContent={'space-evenly'}
               >
                 <Text
                   fontSize="6xl"
-                  textAlign={ 'center' }
+                  textAlign={'center'}
                   color="#472905"
-                  textTransform={ 'uppercase' }
+                  textTransform={'uppercase'}
                 >
                   Get in touch
                 </Text>
-                <Stack spacing={ 3 }>
+                <Stack spacing={3}>
                   <Text
                     fontSize="xl"
-                    textAlign={ 'center' }
+                    textAlign={'center'}
                     color="#472905"
-                    textTransform={ 'uppercase' }
+                    textTransform={'uppercase'}
                     className="irishfont"
                   >
                     Login With
                   </Text>
                   <Stack
-                    direction={ 'row' }
-                    spacing={ 3 }
-                    justifyContent={ 'center' }
+                    direction={'row'}
+                    spacing={3}
+                    justifyContent={'center'}
                   >
                     <Circle size="80px" bg="white" color="black">
                       <SiMicrosoftoutlook className="h-9 w-9" />
@@ -138,42 +138,42 @@ const SellerLogin = () => {
                   </Stack>
                   <Text
                     fontSize="xl"
-                    textAlign={ 'center' }
+                    textAlign={'center'}
                     color="#472905"
-                    textTransform={ 'uppercase' }
+                    textTransform={'uppercase'}
                     className="irishfont"
                   >
                     Or
                   </Text>
                   <Stack
-                    direction={ 'row' }
-                    spacing={ 3 }
-                    justifyContent={ 'center' }
+                    direction={'row'}
+                    spacing={3}
+                    justifyContent={'center'}
                   >
                     <Button
                       variant="outline"
-                      color={ 'white ' }
-                      textTransform={ 'uppercase' }
-                      fontWeight={ 'normal' }
-                      fontSize={ '1.5rem' }
+                      color={'white '}
+                      textTransform={'uppercase'}
+                      fontWeight={'normal'}
+                      fontSize={'1.5rem'}
                     >
                       Chat with us
                     </Button>
                     <Button
                       variant="outline"
-                      color={ 'white ' }
-                      textTransform={ 'uppercase' }
-                      fontWeight={ 'normal' }
-                      fontSize={ '1.5rem' }
+                      color={'white '}
+                      textTransform={'uppercase'}
+                      fontWeight={'normal'}
+                      fontSize={'1.5rem'}
                     >
                       Whatsapp
                     </Button>
                     <Button
                       variant="outline"
-                      color={ 'white ' }
-                      textTransform={ 'uppercase' }
-                      fontWeight={ 'normal' }
-                      fontSize={ '1.5rem' }
+                      color={'white '}
+                      textTransform={'uppercase'}
+                      fontWeight={'normal'}
+                      fontSize={'1.5rem'}
                     >
                       Contact us
                     </Button>

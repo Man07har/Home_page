@@ -15,13 +15,13 @@ import About from './pages/About';
 import Default from './pages/Default';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
-import SellerLogin from './pages/SellerLogin';
-import Seller from './pages/Seller';
-import SellerPlatformPage from './pages/SellerPlatformPage';
-import SellerRegistrationForm from './pages/SellerRegistrationForm';
-import SellerProfile from './pages/SellerProfile';
+import SellerLogin from './sellerPages/SellerLogin';
+import Seller from './sellerPages/Seller';
+import SellerPlatformPage from './sellerPages/SellerPlatformPage';
+import SellerRegistrationForm from './sellerPages/SellerRegistrationForm';
+import SellerProfile from './sellerPages/SellerProfile';
 import Product from './pages/Product';
-import SellerStory from './pages/SellerStory';
+import SellerStory from './sellerPages/SellerStory';
 // DOCS
 //  <Container /> will be used afterward and as a template when using redux
 
@@ -100,7 +100,7 @@ export default function App() {
                   <Route path="/seller-log-in" element={<SellerLogin />} />
                   <Route path="/seller" element={<Seller />} />
                   <Route
-                    path="/sellerplatform"
+                    path="/seller-platform"
                     element={<SellerPlatformPage />}
                   />
                   <Route path="*" element={<Default />} />
@@ -110,7 +110,7 @@ export default function App() {
                   />
                   <Route path="/seller-profile" element={<SellerProfile />} />
                   <Route path="/product" element={<Product />} />
-                  <Route path="/sellerstory" element={<SellerStory />} />
+                  <Route path="/seller-story" element={<SellerStory />} />
                 </Routes>
               </Router>
               <Footer />
