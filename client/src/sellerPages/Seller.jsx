@@ -20,9 +20,9 @@ const Seller = () => {
   return (
     <>
       <div
-        style={ {
+        style={{
           backgroundColor: 'white',
-        } }
+        }}
         className="w-full h-full robotofont"
       >
         <SellerHero />
@@ -32,35 +32,35 @@ const Seller = () => {
           <h1 className="text-[3em] font-medium">Quick & Easy to follow</h1>
           <h2 className="text-[2em] font-medium">
             Start your online business with ease by following these simple
-            steps.{ ' ' }
+            steps.{' '}
           </h2>
           <div className="flex justify-evenly">
             <Procedure
-              image={ MobileShop }
+              image={MobileShop}
               title="Mobile Shop"
               description="
 Create account and complete the verification process in just 10 mins"
             />
             <Procedure
-              image={ MacShop }
+              image={MacShop}
               title="List Products"
               description="
               List the products that you want to sell"
             />
             <Procedure
-              image={ TaskShop }
+              image={TaskShop}
               title="Orders"
               description="
               Keep a track of all the orders placed by customers worldwide"
             />
             <Procedure
-              image={ ShipShop }
+              image={ShipShop}
               title="Shipment &Tracking"
               description="
               Our platform provides easy and stress free deliver"
             />
             <Procedure
-              image={ ProcessShop }
+              image={ProcessShop}
               title="Payment"
               description="
               Get payment in a matter of days"
