@@ -84,9 +84,9 @@ const Sidebar = () => {
           onClick={toggleSidebar}
         />
       )}
-      <div className="content">
+      <div className="content ">
         {/* Your sidebar content goes here */}
-        <div className="bg-[#D3702F] flex justify-center items-center p-3 text-white font-bold border-4 cursor-pointer  border-black  rounded-md m-4">
+        <div className="bg-[#D3702F] flex justify-center items-center hover:translate-x-1 px-4 hover:translate-y-1 text-white font-bold border-4 cursor-pointer  border-black  rounded-md m-4">
           <img
             src={ProfileAccount}
             alt="ProfileAccount"
@@ -94,16 +94,62 @@ const Sidebar = () => {
           />
           <h2 className="text-white">Hello, Sign in</h2>
         </div>
-        <div className="flex flex-col m-4 left-0 items-center text-2xl align-mid cursor-pointer">
-          <p>Trending</p>
-          <p>Best Seller</p>
-          <p>New Releases</p>
-          <p>Menu Items</p>
-          <p>Menu Items</p>
-          <p>Menu Items</p>
-          <p>Menu Items</p>
-          <p>Menu Items</p>
-          <p>Menu Items</p>
+        <div className=" m-3 ">
+          <h2 className="text-3xl font-semibold p-4">Trending</h2>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal ">
+            Best Seller
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            New Releases
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Movers and Shakers
+          </p>
+          <hr className="m-4"></hr>
+          <h2 className="text-3xl font-semibold p-4">Shop By Catogery</h2>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Best Seller
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            New Releases
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Movers and Shakers
+          </p>
+          <hr className="m-4"></hr>
+          <h2 className="text-3xl font-semibold p-4">Features</h2>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Best Seller
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            New Releases
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Movers and Shakers
+          </p>
+          <hr className="m-4"></hr>
+          <h2 className="text-3xl font-semibold p-4">Programs and Features</h2>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Best Seller
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            New Releases
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Movers and Shakers
+          </p>
+          <hr className="m-4"></hr>
+          <h2 className="text-3xl font-semibold p-4">Help & Settings</h2>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Your Account
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Customer Service
+          </p>
+          <p className="hover:bg-[#d3712fcb] hover:cursor-pointer px-4 text-2xl font-normal">
+            Sign In
+          </p>
+          <hr className="m-4"></hr>
         </div>
       </div>
     </div>
