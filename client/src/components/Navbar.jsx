@@ -15,47 +15,56 @@ const Navbar = () => {
         <h2>Info of sales and update</h2>
         <h2>Get Help</h2>
       </div>
-      <div className="flex m-[0.5em]">
-        {/* <img
+      <div className="flex w-[25em]">
+        <div className="">
+          <Sidebar />
+          <h1
+            className=" cursor-pointer text-[2em] font-bold ml-14 flex"
+            onClick={Sidebar}
+          >
+            KnotHastags
+          </h1>
+        </div>
+        <div className="flex m-[0.5em]">
+          {/* <img
             src={SideBar}
             alt="SideBar"
             className="SideBar hover:cursor-pointer"
             onClick={Sidebar}
           /> */}
-        <Sidebar />
-        <h1 className="text-black cursor-pointer text-[2em] font-bold mx-[0.3em] flex">
-          KnotHastags
-        </h1>
-        <div className="mx-[200px]">
-          <input
-            type="text"
-            placeholder="Search arts from here..."
-            className="border-2 border-gray-300 rounded-lg px-2 py-1 hover:cursor-pointer w-[30em] h-[2.5em]"
-          />
-        </div>
 
-        <div className="icons flex font-bold">
-          <div className="mx-2 flex">
-            <CgProfile className="text-[2em] hover:cursor-pointer " />
-            <h2>Login/SignUp</h2>
+          <div className="mx-[200px]">
+            <input
+              type="text"
+              placeholder="Search arts from here..."
+              className="border-2 border-gray-300 rounded-lg px-2 py-1 hover:cursor-pointer w-[30em] h-[2.5em]"
+            />
           </div>
-          <div className="mx-2 flex ">
-            {' '}
-            <PiHandbagSimpleLight className="text-[2em] hover:cursor-pointer " />
-            <h2>My Orders</h2>
-          </div>
-          <div className="mx-2 flex">
-            {' '}
-            <AiOutlineShoppingCart className="text-[2em] hover:cursor-pointer " />
-            <h2>Cart</h2>
-          </div>
-          <div className="mx-2 flex">
-            {' '}
-            <AiOutlineHeart className="text-[2em] hover:cursor-pointer" />
-            <h2>Wishlist</h2>
+
+          <div className="icons flex font-bold">
+            <div className="mx-2 flex">
+              <CgProfile className="text-[2em] hover:cursor-pointer " />
+              <h2>Login/SignUp</h2>
+            </div>
+            <div className="mx-2 flex ">
+              {' '}
+              <PiHandbagSimpleLight className="text-[2em] hover:cursor-pointer " />
+              <h2>My Orders</h2>
+            </div>
+            <div className="mx-2 flex">
+              {' '}
+              <AiOutlineShoppingCart className="text-[2em] hover:cursor-pointer " />
+              <h2>Cart</h2>
+            </div>
+            <div className="mx-2 flex">
+              {' '}
+              <AiOutlineHeart className="text-[2em] hover:cursor-pointer" />
+              <h2>Wishlist</h2>
+            </div>
           </div>
         </div>
       </div>
+
       <div className="bg-[#F5DBCD]  w-screen  flex h-[4em] justify-evenly py-2 font-medium">
         <button className="hover:bg-[#D37130] bg-[#F5DBCD] px-3 shadow-2xl  hover:border-none  hover:text-white rounded-full text-black">
           Catogery
