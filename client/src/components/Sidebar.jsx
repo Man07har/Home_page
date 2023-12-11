@@ -86,7 +86,7 @@ const Sidebar = () => {
       )}
       <div className="content ">
         {/* Your sidebar content goes here */}
-        <div className="bg-[#D3702F] flex justify-center items-center hover:translate-x-1 px-4 hover:translate-y-1 text-white font-bold border-4 cursor-pointer  border-black  rounded-md m-4">
+        <div className="bg-[#b86630ec] flex justify-center items-center hover:translate-x-1 px-4 hover:translate-y-1 text-white font-bold border-4 cursor-pointer  border-black  rounded-md m-4">
           <img
             src={ProfileAccount}
             alt="ProfileAccount"
