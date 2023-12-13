@@ -1,11 +1,13 @@
 import React from 'react';
 import SellerQuery from '../assets/SellerQuery.png';
+import Coin from '../assets/Coin.png';
+import Offer from '../assets/Bxs_offer.png';
 function ShippingAddress() {
   return (
     <>
       <div className="flex p-10 justify-around font-semibold text-2xl text-black">
         {/* <h1>1.Enter a new Shipping Address</h1> */}
-        <div className="bg-[#D37130] p-6 w-1/2">
+        <div className="bg-[#d37130a4] p-6 w-1/2">
           <h2>Add a new Address</h2>
           <div className="bg-[#F5E0D1] flex justify-between p-4">
             {' '}
@@ -124,6 +126,50 @@ function ShippingAddress() {
                 How are delivery cost calculated?
               </h2>
             </div>
+          </div>
+          <div className="bg-[#E8B491] flex mt-10 items-center rounded-md px-14 py-4">
+            {' '}
+            {/* The point where coins section starts */}
+            <img src={Coin} alt="coin" className="w-48" />
+            <div>
+              <h2>For Every $100 spent You earn 2 offer Coins</h2>
+              <h2>Max 50 Per Order</h2>
+            </div>
+          </div>
+          <div className="bg-[#FFEEE2] mt-10 items-center rounded-md px-14 py-4">
+            <h2>Available Offers</h2>
+            <div className="flex">
+              <img src={Offer} alt="Offer" className="w-24 h-12" />
+              <h2 className="ml-6">
+                Bank OfferFlat ₹200 off on HDFC Bank Credit/Debit Card on 3
+                months EMI Txns, Min Txn Value ₹10,000 T&C
+              </h2>
+            </div>
+            <div className="flex">
+              <img src={Offer} alt="Offer" className="w-24 h-12" />
+              <h2 className="ml-6">
+                Bank Offer10% Instant Discount on ICICI Bank Credit Card Txns,
+                up to ₹1250, on orders of ₹5000 and aboveT&C
+              </h2>
+            </div>
+            <div className="flex">
+              <img src={Offer} alt="Offer" className="w-24 h-12" />
+              <h2 className="ml-6">
+                Bank OfferFlat ₹500 off on HDFC Bank Credit/Debit Card on 6
+                months EMI Txns, Min Txn Value ₹10,000 T&C
+              </h2>
+            </div>
+            <div className="flex">
+              <img src={Offer} alt="Offer" className="w-24 h-12" />
+              <h2 className="ml-6">
+                Bank OfferFlat ₹500 off on HDFC Bank Credit/Debit Card on 6
+                months EMI Txns, Min Txn Value ₹10,000 T&C
+              </h2>
+            </div>
+            <h2 className="hover:cursor-pointer ml-24 mt-4">
+              {' '}
+              View 25 more offers
+            </h2>
           </div>
         </div>
       </div>
