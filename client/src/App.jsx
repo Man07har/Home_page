@@ -23,6 +23,7 @@ import SellerProfile from './sellerPages/SellerProfile';
 import Product from './pages/Product';
 import SellerStory from './sellerPages/SellerStory';
 import PaymentPage from './pages/PaymentPage';
+import ShoppingCart from './components/ShoppingCart';
 // DOCS
 //  <Container /> will be used afterward and as a template when using redux
 
@@ -113,6 +114,7 @@ export default function App() {
                   <Route path="/product" element={<Product />} />
                   <Route path="/seller-story" element={<SellerStory />} />
                   <Route path="/PaymentPage" element={<PaymentPage />} />
+                  <Route path="/ShoppingCart" element={<ShoppingCart />} />
                 </Routes>
               </Router>
               <Footer />
